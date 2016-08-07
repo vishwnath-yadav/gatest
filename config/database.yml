@@ -1,0 +1,30 @@
+# development:
+#   adapter: postgresql
+#   host: localhost
+#   database: gatest
+#   username: postgres
+#   password: postgres
+#   pool: 15
+#   timeout: 5000
+#   port: 5432
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: gatest
+
+
+# staging:
+#   url: <%= ENV['DATABASE_URL'] %>
+#   pool: <%= ENV['DB_POOL'] || ENV['MAX_THREADS'] || 15 %>
+
+# production:
+#   url: <%= ENV['DATABASE_URL'] %>
+#   pool: <%= ENV['DB_POOL'] || ENV['MAX_THREADS'] || 5 %>
