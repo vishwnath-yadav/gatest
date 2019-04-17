@@ -7,6 +7,8 @@ class WelcomeController < ApplicationController
     #this is adding comment only
     #added one more commit
     #hcnage in welcome contoller
+
+    
     
     client = Signet::OAuth2::Client.new({
       client_id: '1047963797640-oohtkqo7iebvj61mhqdl9n72t0rnpcae.apps.googleusercontent.com',
