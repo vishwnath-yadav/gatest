@@ -26,6 +26,8 @@ class WelcomeController < ApplicationController
       token_credential_uri: 'https://accounts.google.com/o/oauth2/token',
       redirect_uri: url_for(:action => :oauth2callback),
       code: params[:code]
+
+      #add one more space
     })
 
     @response = client.fetch_access_token!
