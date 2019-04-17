@@ -5,6 +5,8 @@ class WelcomeController < ApplicationController
 
   def auth_link
     #this is adding comment only
+    #added one more commit
+    
     client = Signet::OAuth2::Client.new({
       client_id: '1047963797640-oohtkqo7iebvj61mhqdl9n72t0rnpcae.apps.googleusercontent.com',
       client_secret: 'Yc6idcadksN_-2KHLLiEPNUO',
