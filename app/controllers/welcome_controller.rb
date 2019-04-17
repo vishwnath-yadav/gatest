@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
   end
 
   def oauth2callback
-
+    #this is auth mehtod only
     client = Signet::OAuth2::Client.new({
       client_id: '1047963797640-oohtkqo7iebvj61mhqdl9n72t0rnpcae.apps.googleusercontent.com',
       client_secret: 'Yc6idcadksN_-2KHLLiEPNUO',
